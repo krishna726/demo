@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Hari Academy | Premier Coaching Institute in Kanpur (IIT-JEE, NEET, 9th-12th)</title>
+    <meta name="description" content="Shri Hari Academy is Kanpur's leading coaching institute for IIT-JEE, NEET, Foundation, and Class 9th-12th Science & Commerce. Expert faculty, small batches, and proven rank results.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS via CDN for rapid utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1E3A8A',
+                            900: '#0F172A',
+                            950: '#0B192C'
+                        },
+                        saffron: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309'
+                        },
+                        gold: '#EAB308'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'Inter', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body text-slate-800 bg-slate-50 antialiased selection:bg-saffron-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR & QUICK CONTACT -->
+    <div class="bg-navy-950 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-navy-800/60">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center">
+                <span class="inline-flex items-center gap-1.5 text-saffron-400 font-medium">
+                    <i class="fa-solid fa-location-dot"></i> Kakadeo & Swaroop Nagar, Kanpur
+                </span>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <a href="tel:+919839012345" class="hover:text-saffron-400 transition-colors inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone"></i> +91 9236661231
+                </a>
+                <span class="hidden sm:inline text-slate-600">|</span>
+                <a href="mailto:admissions@shrihariacademy.in" class="hover:text-saffron-400 transition-colors hidden lg:inline-flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope"></i> admissions@shrihariacademy.in
+                </a>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-saffron-500/20 text-saffron-400 px-2.5 py-0.5 rounded-full text-xs font-semibold animate-pulse border border-saffron-500/30">
+                     Admissions Open 2025-26
+                </span>
+                <a href="https://wa.me/919839012345" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs px-2.5 py-1 rounded font-medium flex items-center gap-1 transition">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100 transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- BRAND LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-navy-950 via-navy-900 to-navy-800 flex items-center justify-center text-saffron-400 text-2xl font-bold shadow-md shadow-navy-900/20 group-hover:scale-105 transition-transform duration-300 border border-saffron-500/30">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <div class="font-sans font-extrabold text-xl sm:text-2xl text-navy-950 tracking-tight leading-none group-hover:text-navy-800 transition-colors">
+                            SHRI HARI <span class="text-saffron-500">ACADEMY</span>
+                        </div>
+                        <div class="text-[11px] font-semibold text-slate-500 tracking-wider uppercase mt-1">
+                            Kanpur's Center of Academic Excellence
+                        </div>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV LINKS -->
+                <nav class="hidden lg:flex items-center gap-7 font-medium text-slate-700 text-sm">
+                    <a href="#home" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">Home</a>
+                    <a href="#about" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">About Us</a>
+                    <a href="#courses" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">Courses</a>
+                    <a href="#why-us" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">Why Choose Us</a>
+                    <a href="#toppers" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">Results</a>
+                    <a href="#testimonials" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">Reviews</a>
+                    <a href="#contact" class="hover:text-saffron-600 transition-colors py-1 border-b-2 border-transparent hover:border-saffron-500">Contact</a>
+                </nav>
+
+                <!-- HEADER ACTION BUTTONS -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <button onclick="openDemoModal()" class="btn-saffron shadow-lg shadow-saffron-500/20 px-5 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-calendar-check mr-1.5"></i> Book Free Demo Class
+                    </button>
+                </div>
+
+                <!-- MOBILE HAMBURGER BUTTON -->
+                <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="lg:hidden text-slate-700 hover:text-navy-900 focus:outline-none p-2 rounded-lg hover:bg-slate-100">
+                    <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DRAWER -->
+        <div id="mobileDrawer" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3 transition-all duration-300 shadow-xl">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About Us</a>
+            <a href="#courses" class="mobile-nav-link">Courses Offered</a>
+            <a href="#why-us" class="mobile-nav-link">Why Choose Us</a>
+            <a href="#toppers" class="mobile-nav-link">Top Rankers</a>
+            <a href="#testimonials" class="mobile-nav-link">Student Testimonials</a>
+            <a href="#contact" class="mobile-nav-link">Contact & Location</a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <button onclick="openDemoModal()" class="w-full btn-saffron py-3 rounded-lg font-semibold text-center text-sm shadow-md">
+                    <i class="fa-solid fa-calendar-check mr-1.5"></i> Book Free Demo Class
+                </button>
+                <a href="tel:+919839012345" class="w-full bg-navy-950 text-white py-2.5 rounded-lg text-center font-medium text-sm flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone text-saffron-400"></i> Call Kanpur Campus
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- LIVE NOTICE MARQUEE TICKER -->
+    <div class="bg-gradient-to-r from-saffron-600 via-saffron-500 to-amber-500 text-slate-900 py-2.5 px-4 overflow-hidden relative shadow-inner">
+        <div class="max-w-7xl mx-auto flex items-center gap-3">
+            <span class="bg-navy-950 text-white font-bold text-xs uppercase px-2.5 py-1 rounded flex items-center gap-1.5 whitespace-nowrap shadow">
+                <i class="fa-solid fa-bullhorn text-saffron-400"></i> ANNOUNCEMENT
+            </span>
+            <div class="overflow-hidden relative w-full font-medium text-xs sm:text-sm">
+                <div class="animate-marquee whitespace-nowrap flex items-center gap-8">
+                    <span>⚡ New Batches for <strong>IIT-JEE & NEET 2025-26</strong> starting from 10th April at Kakadeo Campus!</span>
+                    <span>🎓 <strong>SHAT 2025 (Shri Hari Admission & Scholarship Test)</strong>: Get up to 100% Scholarship on Tuition Fees!</span>
+                    <span>🏆 Class 9th & 10th Board Booster Batches Registrations Now Open in Kanpur!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="relative bg-gradient-to-b from-navy-950 via-navy-900 to-slate-950 text-white py-16 lg:py-24 overflow-hidden">
+        <!-- Decorative Background Patterns & Glows -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-saffron-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO CONTENT LEFT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- BADGE -->
+                    <div class="inline-flex items-center gap-2 bg-navy-800/80 border border-saffron-500/40 text-saffron-400 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold shadow-lg backdrop-blur-md">
+                        <i class="fa-solid fa-award text-saffron-400"></i>
+                        <span>Kanpur's Most Trusted Academy for IIT-JEE, NEET & Boards</span>
+                    </div>
+
+                    <!-- HEADLINE -->
+                    <h1 class="font-sans text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Shape Your Future with <span class="text-transparent bg-clip-text bg-gradient-to-r from-saffron-400 via-amber-300 to-saffron-500">Shri Hari Academy</span>
+                    </h1>
+
+                    <!-- SUBTITLE -->
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Unlock academic brilliance and competitive exam success in Kanpur. Learn from top IITian & Doctor faculty with personalized mentorship, small batch sizes, and proven rank-producing test series.
+                    </p>
+
+                    <!-- HERO CTAS -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="openDemoModal()" class="w-full sm:w-auto btn-saffron px-8 py-4 rounded-xl font-bold text-base shadow-xl shadow-saffron-500/25 flex items-center justify-center gap-2 transition duration-300 transform hover:-translate-y-1">
+                            <i class="fa-solid fa-rocket text-navy-950"></i> Book a Free Demo Class
+                        </button>
+                        <a href="#courses" class="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-700 text-white border border-slate-700 px-7 py-4 rounded-xl font-semibold text-base flex items-center justify-center gap-2 transition duration-300 backdrop-blur-md">
+                            <i class="fa-solid fa-book-open text-saffron-400"></i> Explore Courses
+                        </a>
+                    </div>
+
+                    <!-- TRUST METRICS -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center lg:text-left">
+                        <div class="space-y-1">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-saffron-400 font-sans">98.4%</div>
+                            <div class="text-xs text-slate-400 font-medium">Board Exam Pass Rate</div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-saffron-400 font-sans">500+</div>
+                            <div class="text-xs text-slate-400 font-medium">JEE & NEET Ranks</div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-saffron-400 font-sans">15+ Yrs</div>
+                            <div class="text-xs text-slate-400 font-medium">Kanpur Teaching Legacy</div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-saffron-400 font-sans">30 Max</div>
+                            <div class="text-xs text-slate-400 font-medium">Students Per Batch</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- HERO VISUAL RIGHT -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Frame Image -->
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-slate-800/60 bg-slate-900 group">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Students studying at Shri Hari Academy Kanpur" class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-90">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <span class="bg-saffron-500 text-navy-950 text-xs font-bold px-2.5 py-1 rounded">Smart Classroom Kanpur</span>
+                                <h3 class="text-lg font-bold mt-1">Interactive Learning Environment</h3>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1: Top Rank -->
+                        <div class="absolute -top-5 -left-5 bg-white text-slate-900 p-3.5 rounded-xl shadow-2xl border border-slate-100 flex items-center gap-3 animate-bounce-slow z-20">
+                            <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-xl">
+                                🏆
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">JEE Adv AIR 142</div>
+                                <div class="text-sm font-bold text-navy-950">Aarav Sharma (Kanpur)</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2: Faculty Expertise -->
+                        <div class="absolute -bottom-6 -right-4 bg-navy-900 text-white p-4 rounded-xl shadow-2xl border border-saffron-500/40 flex items-center gap-3 z-20">
+                            <div class="w-10 h-10 rounded-full bg-saffron-500 text-navy-950 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-user-graduate text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-saffron-400 font-semibold uppercase tracking-wider">Expert Mentors</div>
+                                <div class="text-sm font-bold">IITians & Ex-Doctors</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT US SECTION -->
+    <section id="about" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- ABOUT IMAGE GRID -->
+                <div class="lg:col-span-5 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=500&q=80" alt="Faculty teaching at Kanpur Academy" class="rounded-2xl shadow-md object-cover h-56 w-full transform hover:scale-105 transition duration-500">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=500&q=80" alt="Students in library studying" class="rounded-2xl shadow-md object-cover h-56 w-full mt-6 transform hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="mt-4 bg-navy-950 text-white p-6 rounded-2xl shadow-xl border-l-4 border-saffron-500 flex items-center justify-between">
+                        <div>
+                            <div class="text-saffron-400 font-bold text-xl">Founded in Kanpur</div>
+                            <div class="text-xs text-slate-300">Dedicated to Student Triumph Since 2010</div>
+                        </div>
+                        <i class="fa-solid fa-building-columns text-3xl text-saffron-400/80"></i>
+                    </div>
+                </div>
+
+                <!-- ABOUT CONTENT -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-saffron-600 font-bold text-xs uppercase tracking-widest bg-saffron-50 px-3 py-1 rounded-md">
+                        <i class="fa-solid fa-graduation-cap"></i> About Shri Hari Academy
+                    </div>
+
+                    <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-navy-950 leading-tight">
+                        Empowering Kanpur's Students with <span class="text-saffron-600">Conceptual Clarity</span> & Proven Mentorship
+                    </h2>
+
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        Located in Kakadeo & Swaroop Nagar — Kanpur's premier education hubs — <strong>Shri Hari Academy</strong> was established with a singular vision: to bridge the gap between classroom teaching and competitive exam success.
+                    </p>
+                    <p class="text-slate-600 text-base leading-relaxed">
+                        We specialize in tailored coaching for <strong>Class 9th to 12th (Science & Commerce)</strong> alongside intensive preparation for <strong>IIT-JEE (Main & Advanced)</strong> and <strong>NEET-UG</strong>. We believe every student possesses unique potential, which thrives under disciplined guidance, small batch sizes, and consistent doubt resolution.
+                    </p>
+
+                    <!-- CORE VALUES GRID -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-9 h-9 rounded-lg bg-navy-900 text-saffron-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-chalkboard-user text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-sm">Experienced Faculty</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">IIT & Top University Alumni with 10+ years teaching experience.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-9 h-9 rounded-lg bg-navy-900 text-saffron-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-user-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-sm">Personalized Mentorship</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">1-on-1 counseling and performance tracking for every child.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-9 h-9 rounded-lg bg-navy-900 text-saffron-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-file-pen text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-sm">Regular Test Series</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Weekly chapter-wise and All-India mock test papers with analytics.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+                            <div class="w-9 h-9 rounded-lg bg-navy-900 text-saffron-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-comments text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-sm">Dedicated Doubt Counters</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Daily extra classes to ensure no query goes unresolved.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. COURSES OFFERED SECTION -->
+    <section id="courses" class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- SECTION HEADER -->
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="inline-flex items-center gap-2 text-saffron-600 font-bold text-xs uppercase tracking-widest bg-saffron-100/70 px-3.5 py-1 rounded-md">
+                    <i class="fa-solid fa-book-open"></i> Academic Programs
+                </span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-navy-950">
+                    Comprehensive Courses for Every Goal
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    From foundational school academics to rigorous entrance exam preparations, choose the ideal track for your academic success in Kanpur.
+                </p>
+
+                <!-- COURSE CATEGORY FILTER TABS -->
+                <div class="flex flex-wrap items-center justify-center gap-2 pt-4" id="courseTabs">
+                    <button data-filter="all" class="tab-btn active">All Courses</button>
+                    <button data-filter="academics" class="tab-btn">School Academics (9th-12th)</button>
+                    <button data-filter="competitive" class="tab-btn">Competitive Exams (IIT-JEE & NEET)</button>
+                    <button data-filter="foundation" class="tab-btn">Foundation (8th-10th)</button>
+                </div>
+            </div>
+
+            <!-- COURSES CARDS GRID -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="coursesGrid">
+                
+                <!-- CARD 1: IIT-JEE MAIN & ADVANCED -->
+                <div class="course-card" data-category="competitive">
+                    <div class="relative bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-xl transition-all duration-300">
+                        <div class="bg-navy-950 text-white p-6 relative">
+                            <span class="bg-saffron-500 text-navy-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Top Seller</span>
+                            <h3 class="text-xl font-extrabold mt-3 text-white">IIT-JEE (Main & Advanced)</h3>
+                            <p class="text-xs text-slate-300 mt-1">2-Year & 1-Year Intensive Classroom Program</p>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Physics, Chemistry & Mathematics syllabus mastery</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Daily Practice Papers (DPPs) & PYQ Solving</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>All-India Mock Test Series with AIR percentile prediction</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Target: Class 11, 12 & Droppers/Repeaters</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase font-semibold">Mode & Campus</div>
+                                    <div class="text-xs font-bold text-navy-900">Offline Kakadeo Campus</div>
+                                </div>
+                                <button onclick="openDemoModal('IIT-JEE')" class="btn-saffron px-4 py-2 rounded-lg text-xs font-bold shadow">
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: NEET-UG MEDICAL -->
+                <div class="course-card" data-category="competitive">
+                    <div class="relative bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-xl transition-all duration-300">
+                        <div class="bg-navy-950 text-white p-6 relative">
+                            <span class="bg-emerald-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Medical Special</span>
+                            <h3 class="text-xl font-extrabold mt-3 text-white">NEET-UG Medical Prep</h3>
+                            <p class="text-xs text-slate-300 mt-1">Class 11th, 12th & Repeater Batches</p>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>NCERT Line-by-Line Biology & Organic Chemistry focus</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Physics Numerical Speed Training & Tricks</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Weekly OMR-based test practice & rank tracking</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Guided by Ex-Medical College Professors</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase font-semibold">Mode & Campus</div>
+                                    <div class="text-xs font-bold text-navy-900">Kakadeo / Swaroop Nagar</div>
+                                </div>
+                                <button onclick="openDemoModal('NEET-UG')" class="btn-saffron px-4 py-2 rounded-lg text-xs font-bold shadow">
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3: CLASS 11TH & 12TH SCIENCE -->
+                <div class="course-card" data-category="academics">
+                    <div class="relative bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-xl transition-all duration-300">
+                        <div class="bg-navy-900 text-white p-6 relative">
+                            <span class="bg-blue-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Board Focus</span>
+                            <h3 class="text-xl font-extrabold mt-3 text-white">Class 11 & 12 (Science)</h3>
+                            <p class="text-xs text-slate-300 mt-1">CBSE, ICSE & UP State Board</p>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Physics, Chemistry, Maths & Biology (PCMB)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>In-depth board derivation & theory answer writing</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Practical exam guidance & project support</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>95%+ Score guaranteed strategy modules</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase font-semibold">Mode & Campus</div>
+                                    <div class="text-xs font-bold text-navy-900">Regular Evening Batches</div>
+                                </div>
+                                <button onclick="openDemoModal('Class 11-12 Science')" class="btn-saffron px-4 py-2 rounded-lg text-xs font-bold shadow">
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4: CLASS 11TH & 12TH COMMERCE -->
+                <div class="course-card" data-category="academics">
+                    <div class="relative bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-xl transition-all duration-300">
+                        <div class="bg-navy-900 text-white p-6 relative">
+                            <span class="bg-amber-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Commerce Hub</span>
+                            <h3 class="text-xl font-extrabold mt-3 text-white">Class 11 & 12 (Commerce)</h3>
+                            <p class="text-xs text-slate-300 mt-1">Accountancy, Economics & Business</p>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Accountancy Numerical Mastery & Double Entry</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Macro/Micro Economics & Statistics</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Business Studies Case Studies & CUET foundation</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Taught by Chartered Accountant (CA) Mentors</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase font-semibold">Mode & Campus</div>
+                                    <div class="text-xs font-bold text-navy-900">Swaroop Nagar Campus</div>
+                                </div>
+                                <button onclick="openDemoModal('Class 11-12 Commerce')" class="btn-saffron px-4 py-2 rounded-lg text-xs font-bold shadow">
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5: CLASS 9TH & 10TH BOARD BOOSTER -->
+                <div class="course-card" data-category="academics">
+                    <div class="relative bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-xl transition-all duration-300">
+                        <div class="bg-navy-900 text-white p-6 relative">
+                            <span class="bg-purple-600 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Class 9th & 10th</span>
+                            <h3 class="text-xl font-extrabold mt-3 text-white">Board Booster Program</h3>
+                            <p class="text-xs text-slate-300 mt-1">Science, Maths, English & Social Science</p>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Strong fundamentals in Science & Mathematics</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>NCERT Exemplar & RS Aggarwal / RD Sharma practice</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>10th Board sample paper solving & pre-board mocks</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Weekly revision quizzes & doubt clearing</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase font-semibold">Mode & Campus</div>
+                                    <div class="text-xs font-bold text-navy-900">After School Batches</div>
+                                </div>
+                                <button onclick="openDemoModal('Class 9th-10th Board')" class="btn-saffron px-4 py-2 rounded-lg text-xs font-bold shadow">
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6: JUNIOR FOUNDATION (8th to 10th) -->
+                <div class="course-card" data-category="foundation">
+                    <div class="relative bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden flex flex-col h-full hover:shadow-xl transition-all duration-300">
+                        <div class="bg-navy-900 text-white p-6 relative">
+                            <span class="bg-saffron-500 text-navy-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Olympiad & NTSE</span>
+                            <h3 class="text-xl font-extrabold mt-3 text-white">Junior Foundation (8th-10th)</h3>
+                            <p class="text-xs text-slate-300 mt-1">Early Competitive Advantage Program</p>
+                        </div>
+                        <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600">
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Logical reasoning & Olympiad problem solving</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Early start for JEE & NEET conceptual base</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>NTSE, NSO, IMO preparation and mock tests</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-emerald-500 font-bold"></i>
+                                    <span>Analytical thinking & mental ability enhancement</span>
+                                </li>
+                            </ul>
+                            
+                            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                                <div>
+                                    <div class="text-[11px] text-slate-400 uppercase font-semibold">Mode & Campus</div>
+                                    <div class="text-xs font-bold text-navy-900">Weekend & Evening Batches</div>
+                                </div>
+                                <button onclick="openDemoModal('Junior Foundation')" class="btn-saffron px-4 py-2 rounded-lg text-xs font-bold shadow">
+                                    Enroll Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. WHY CHOOSE US SECTION -->
+    <section id="why-us" class="py-20 bg-navy-950 text-white relative overflow-hidden">
+        <!-- Background accents -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-saffron-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-2 text-saffron-400 font-bold text-xs uppercase tracking-widest bg-navy-900 border border-saffron-500/30 px-3.5 py-1 rounded-md">
+                    <i class="fa-solid fa-star"></i> The Shri Hari Advantage
+                </span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-white">
+                    Why Kanpur Students & Parents Choose Us
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Our relentless commitment to individual growth, conceptual clarity, and disciplined mentorship makes us Kanpur's top coaching destination.
+                </p>
+            </div>
+
+            <!-- FEATURES GRID -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- FEATURE 1 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Experienced Faculty</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Learn directly from seasoned IITians, Ex-Medical Professors, and subject experts with 10+ years of proven pedagogy.
+                    </p>
+                </div>
+
+                <!-- FEATURE 2 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Regular Test Series</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Weekly chapter tests and All-India level full syllabus mock tests with micro-level error analysis report for each student.
+                    </p>
+                </div>
+
+                <!-- FEATURE 3 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Daily Doubt Clearing</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Dedicated 1-on-1 doubt counters operating daily where students can get personalized clarity on any problem or concept.
+                    </p>
+                </div>
+
+                <!-- FEATURE 4 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Proven Track Record</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Consistently producing Kanpur toppers in JEE Advanced, NEET-UG, and 95%+ scorers in CBSE/ICSE board exams.
+                    </p>
+                </div>
+
+                <!-- FEATURE 5 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Small Batch Size</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Strictly capped at 30 students per batch to ensure individual attention and teacher-student interactive rapport.
+                    </p>
+                </div>
+
+                <!-- FEATURE 6 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Curated Study Material</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Comprehensive printed modules, daily practice sheets, and exhaustive formula handbooks prepared in-house.
+                    </p>
+                </div>
+
+                <!-- FEATURE 7 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Parent-Teacher Connect</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Monthly PTMs and automated SMS updates regarding attendance, test marks, and study progress.
+                    </p>
+                </div>
+
+                <!-- FEATURE 8 -->
+                <div class="bg-navy-900/80 border border-slate-800 p-6 rounded-2xl hover:border-saffron-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-saffron-500/10 text-saffron-400 flex items-center justify-center text-2xl font-bold mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Scholarships Available</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Merit-based fee concessions through SHAT exam for bright & deserving students in Kanpur.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. TOPPERS / RESULTS WALL SECTION -->
+    <section id="toppers" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-2 text-saffron-600 font-bold text-xs uppercase tracking-widest bg-saffron-50 px-3.5 py-1 rounded-md">
+                    <i class="fa-solid fa-trophy"></i> Hall of Fame
+                </span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-navy-950">
+                    Our Star Rankers & Success Stories
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Meet the brilliant minds who made Kanpur proud with top ranks in IIT-JEE, NEET-UG, and Board Exams.
+                </p>
+            </div>
+
+            <!-- TOPPERS CARDS GRID -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- TOPPER 1 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 text-center shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-saffron-500 text-navy-950 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase">
+                        JEE Advanced
+                    </div>
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-saffron-500 shadow-lg mb-4 mt-2">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Aarav Sharma Top Ranker" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-navy-950 text-base">Aarav Sharma</h3>
+                    <div class="text-saffron-600 font-extrabold text-lg mt-0.5">AIR 142</div>
+                    <div class="text-xs text-slate-500 font-medium mt-1">Secured IIT Bombay CSE</div>
+                    <div class="mt-3 pt-3 border-t border-slate-200 text-xs italic text-slate-600">
+                        "The doubt clearing sessions at Kakadeo branch were a total game-changer for my JEE preparation."
+                    </div>
+                </div>
+
+                <!-- TOPPER 2 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 text-center shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-emerald-500 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase">
+                        NEET-UG 2024
+                    </div>
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-emerald-500 shadow-lg mb-4 mt-2">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Ananya Verma Medical Topper" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-navy-950 text-base">Ananya Verma</h3>
+                    <div class="text-emerald-600 font-extrabold text-lg mt-0.5">695 / 720</div>
+                    <div class="text-xs text-slate-500 font-medium mt-1">Admitted to KGMU Lucknow</div>
+                    <div class="mt-3 pt-3 border-t border-slate-200 text-xs italic text-slate-600">
+                        "NCERT line-by-line focus in Biology and weekly mock tests gave me huge confidence."
+                    </div>
+                </div>
+
+                <!-- TOPPER 3 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 text-center shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase">
+                        CBSE 12th Board
+                    </div>
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-blue-600 shadow-lg mb-4 mt-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Rohan Gupta CBSE Topper" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-navy-950 text-base">Rohan Gupta</h3>
+                    <div class="text-blue-600 font-extrabold text-lg mt-0.5">98.4% Aggregate</div>
+                    <div class="text-xs text-slate-500 font-medium mt-1">Kanpur District Topper (PCMB)</div>
+                    <div class="mt-3 pt-3 border-t border-slate-200 text-xs italic text-slate-600">
+                        "Shri Hari Academy teachers simplified complex Physics derivations effortlessly."
+                    </div>
+                </div>
+
+                <!-- TOPPER 4 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 p-5 text-center shadow-md hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-purple-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full uppercase">
+                        ICSE 10th Board
+                    </div>
+                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden border-4 border-purple-600 shadow-lg mb-4 mt-2">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80" alt="Priya Singh 10th Topper" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="font-bold text-navy-950 text-base">Priya Singh</h3>
+                    <div class="text-purple-600 font-extrabold text-lg mt-0.5">97.8% Score</div>
+                    <div class="text-xs text-slate-500 font-medium mt-1">Junior Foundation Student</div>
+                    <div class="mt-3 pt-3 border-t border-slate-200 text-xs italic text-slate-600">
+                        "Starting foundation prep in 9th class built my problem-solving speed immensely."
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FEE & COURSE ESTIMATOR CALCULATOR WIDGET -->
+    <section class="py-14 bg-gradient-to-r from-navy-950 via-navy-900 to-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-navy-900/90 border border-saffron-500/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-xl">
+                <div class="text-center mb-8">
+                    <span class="bg-saffron-500/20 text-saffron-400 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider border border-saffron-500/30">Quick Calculator</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Find Your Ideal Course & Fee Estimate</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-1">Select your current class & target exam to get instant recommendation</p>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Select Student Class</label>
+                        <select id="calcClass" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-saffron-500">
+                            <option value="9">Class 9th</option>
+                            <option value="10">Class 10th</option>
+                            <option value="11" selected>Class 11th</option>
+                            <option value="12">Class 12th</option>
+                            <option value="dropper">Passed 12th (Dropper / Repeater)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Target Goal / Exam</label>
+                        <select id="calcGoal" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-saffron-500">
+                            <option value="jee">IIT-JEE (Main & Advanced)</option>
+                            <option value="neet">NEET-UG Medical</option>
+                            <option value="boards">Class Board Exams Only</option>
+                            <option value="foundation">Olympiad & Foundation</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Preferred Kanpur Campus</label>
+                        <select id="calcBranch" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-saffron-500">
+                            <option value="Kakadeo">Kakadeo Campus (Main Hub)</option>
+                            <option value="Swaroop Nagar">Swaroop Nagar Center</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="calcResult" class="mt-6 bg-slate-800/80 rounded-2xl p-5 border border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <div class="text-xs text-saffron-400 font-bold uppercase tracking-wider">Recommended Program</div>
+                        <div class="text-lg font-bold text-white" id="calcProgramName">IIT-JEE 2-Year Classroom Integrated Program</div>
+                        <div class="text-xs text-slate-400" id="calcBatchDetails">Batch Schedule: Morning & Evening Slots Available | Duration: 24 Months</div>
+                    </div>
+                    <button onclick="openDemoModal('Calculator Inquiry')" class="btn-saffron px-6 py-3 rounded-xl font-bold text-xs whitespace-nowrap shadow-lg shrink-0">
+                        Get Fee Concession Details <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. STUDENT & PARENT TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-2 text-saffron-600 font-bold text-xs uppercase tracking-widest bg-saffron-100/70 px-3.5 py-1 rounded-md">
+                    <i class="fa-solid fa-comment-dots"></i> Testimonials
+                </span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-navy-950">
+                    What Students & Parents Say About Us
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Real experiences from Kanpur families who trusted Shri Hari Academy for academic growth.
+                </p>
+            </div>
+
+            <!-- TESTIMONIAL SLIDER CONTAINER -->
+            <div class="relative max-w-4xl mx-auto">
+                <div class="overflow-hidden rounded-3xl bg-white shadow-xl border border-slate-200 p-8 sm:p-12 relative" id="testimonialContainer">
+                    
+                    <!-- SLIDE 1 -->
+                    <div class="testimonial-slide space-y-6 block">
+                        <div class="flex items-center gap-1 text-saffron-500 text-lg">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-base sm:text-lg italic leading-relaxed">
+                            "Shri Hari Academy transformed my son's attitude towards Physics and Chemistry. The faculty in Kakadeo branch doesn't just teach for marks; they build true conceptual understanding. He cleared JEE Advanced with AIR 410!"
+                        </p>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                            <div class="w-12 h-12 rounded-full bg-navy-900 text-saffron-400 font-bold flex items-center justify-center text-lg">
+                                RK
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-base">Dr. Rajesh Kapoor</h4>
+                                <p class="text-xs text-slate-500">Parent of Sarthak Kapoor (JEE 2024 Batch, Kanpur)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="testimonial-slide space-y-6 hidden">
+                        <div class="flex items-center gap-1 text-saffron-500 text-lg">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-base sm:text-lg italic leading-relaxed">
+                            "Small batch sizes of 25-30 students made a world of difference for me. Whenever I had a doubt in Biology or Chemistry, I could walk up to the doubt counter without hesitation. Thank you Shri Hari Academy!"
+                        </p>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                            <div class="w-12 h-12 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-lg">
+                                MS
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-base">Megha Srivastava</h4>
+                                <p class="text-xs text-slate-500">NEET Score: 680/720 (Swaroop Nagar Campus)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="testimonial-slide space-y-6 hidden">
+                        <div class="flex items-center gap-1 text-saffron-500 text-lg">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-700 text-base sm:text-lg italic leading-relaxed">
+                            "As a Class 12 Commerce student, finding good Accountancy & Economics coaching in Kanpur was tough until we found Shri Hari Academy. The CA faculty explains complex numericals step-by-step!"
+                        </p>
+                        <div class="flex items-center gap-4 pt-4 border-t border-slate-100">
+                            <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold flex items-center justify-center text-lg">
+                                AM
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy-950 text-base">Aditya Mishra</h4>
+                                <p class="text-xs text-slate-500">Class 12 Commerce - 96.6% Score</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CAROUSEL CONTROLS -->
+                <div class="flex items-center justify-center gap-4 mt-8">
+                    <button id="prevTestimonial" aria-label="Previous Testimonial" class="w-10 h-10 rounded-full bg-white shadow border border-slate-200 text-navy-950 hover:bg-saffron-500 hover:text-white transition flex items-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="flex gap-2" id="testimonialDots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button id="nextTestimonial" aria-label="Next Testimonial" class="w-10 h-10 rounded-full bg-white shadow border border-slate-200 text-navy-950 hover:bg-saffron-500 hover:text-white transition flex items-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. FREQUENTLY ASKED QUESTIONS (FAQ) SECTION -->
+    <section class="py-20 bg-white border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 space-y-3">
+                <span class="inline-flex items-center gap-2 text-saffron-600 font-bold text-xs uppercase tracking-widest bg-saffron-50 px-3.5 py-1 rounded-md">
+                    <i class="fa-solid fa-circle-question"></i> Clear Your Doubts
+                </span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-navy-950">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Everything you need to know about admissions, batches, and scholarships at Shri Hari Academy Kanpur.
+                </p>
+            </div>
+
+            <!-- FAQ ACCORDION -->
+            <div class="space-y-4" id="faqAccordion">
+                
+                <!-- FAQ 1 -->
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition">
+                    <button class="faq-header w-full px-6 py-4 text-left font-bold text-navy-950 flex justify-between items-center gap-4 text-base focus:outline-none">
+                        <span>What is the admission procedure for JEE and NEET batches?</span>
+                        <i class="fa-solid fa-chevron-down text-saffron-600 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-sm text-slate-600 hidden leading-relaxed">
+                        Admissions are granted through our direct counseling session or via our <strong>SHAT (Shri Hari Admission Test)</strong> scholarship exam. You can visit our Kakadeo or Swaroop Nagar center in Kanpur or book a free demo class online to initiate admission.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition">
+                    <button class="faq-header w-full px-6 py-4 text-left font-bold text-navy-950 flex justify-between items-center gap-4 text-base focus:outline-none">
+                        <span>What is the maximum batch size at Shri Hari Academy?</span>
+                        <i class="fa-solid fa-chevron-down text-saffron-600 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-sm text-slate-600 hidden leading-relaxed">
+                        To maintain individual focus, we strictly limit our classroom batch sizes to a maximum of 30 students. This enables teachers to track every student's daily understanding and performance.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition">
+                    <button class="faq-header w-full px-6 py-4 text-left font-bold text-navy-950 flex justify-between items-center gap-4 text-base focus:outline-none">
+                        <span>Are there separate doubt-clearing sessions?</span>
+                        <i class="fa-solid fa-chevron-down text-saffron-600 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-sm text-slate-600 hidden leading-relaxed">
+                        Yes! We have dedicated daily 1-on-1 doubt clearing counters from 10:00 AM to 6:00 PM at both our Kakadeo and Swaroop Nagar campuses where faculty members clear individual queries.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition">
+                    <button class="faq-header w-full px-6 py-4 text-left font-bold text-navy-950 flex justify-between items-center gap-4 text-base focus:outline-none">
+                        <span>How can students apply for fee scholarships?</span>
+                        <i class="fa-solid fa-chevron-down text-saffron-600 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-sm text-slate-600 hidden leading-relaxed">
+                        Students can appear for <strong>SHAT (Shri Hari Admission & Scholarship Test)</strong> conducted every Sunday. Based on test score performance, scholarships ranging from 10% to 100% on tuition fees are awarded.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition">
+                    <button class="faq-header w-full px-6 py-4 text-left font-bold text-navy-950 flex justify-between items-center gap-4 text-base focus:outline-none">
+                        <span>Do you provide study material and test series?</span>
+                        <i class="fa-solid fa-chevron-down text-saffron-600 text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content px-6 pb-5 text-sm text-slate-600 hidden leading-relaxed">
+                        Yes, every enrolled student receives comprehensive printed subject modules, Daily Practice Papers (DPPs), formula booklets, and full access to our Kanpur offline test series with rank analysis.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CONTACT & LOCATION SECTION -->
+    <section id="contact" class="py-20 bg-slate-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="inline-flex items-center gap-2 text-saffron-600 font-bold text-xs uppercase tracking-widest bg-saffron-100/70 px-3.5 py-1 rounded-md">
+                    <i class="fa-solid fa-map-location-dot"></i> Connect With Us
+                </span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold text-navy-950">
+                    Visit Our Kanpur Campus
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base">
+                    Have questions or want to tour our classrooms? Drop by our Kakadeo branch or send us an inquiry.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- CONTACT INFORMATION & MAP (7 COLS) -->
+                <div class="lg:col-span-7 space-y-6">
+                    
+                    <!-- CAMPUS INFO CARDS -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-navy-950 text-saffron-400 flex items-center justify-center font-bold text-lg mb-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h4 class="font-bold text-navy-950 text-base">Kakadeo Main Branch</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Plot 42, Main Coaching Corridor, Near Geeta Nagar Cross, Kakadeo, Kanpur, UP - 208025
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200">
+                            <div class="w-10 h-10 rounded-xl bg-navy-950 text-saffron-400 flex items-center justify-center font-bold text-lg mb-3">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                            <h4 class="font-bold text-navy-950 text-base">Swaroop Nagar Branch</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                117/N/84, Opposite Rave Moti Mall Road, Swaroop Nagar, Kanpur, UP - 208002
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- PHONE & EMAIL BANNER -->
+                    <div class="bg-navy-950 text-white p-6 rounded-2xl shadow-lg border border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <div class="space-y-1 text-center sm:text-left">
+                            <div class="text-xs text-saffron-400 font-semibold uppercase tracking-wider">Admission Helpline</div>
+                            <div class="text-lg font-extrabold text-white flex items-center justify-center sm:justify-start gap-2">
+                                <i class="fa-solid fa-phone text-saffron-500"></i> +91 98390 12345 / 0512 2509999
+                            </div>
+                            <div class="text-xs text-slate-300">Office Hours: 8:00 AM - 8:00 PM (Mon to Sun)</div>
+                        </div>
+                        <a href="tel:+919839012345" class="btn-saffron px-5 py-2.5 rounded-xl font-bold text-xs shadow whitespace-nowrap">
+                            Call Now
+                        </a>
+                    </div>
+
+                    <!-- EMBEDDED GOOGLE MAP PLACEHOLDER FOR KANPUR -->
+                    <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-300 h-64 relative bg-slate-200">
+                        <iframe 
+                            title="Shri Hari Academy Kanpur Location Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571.2583854193587!2d80.298715!3d26.478951!2m3!1f0!2f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c381f2115d97f%3A0x6b772b15e2bf01a3!2sKakadeo%2C%20Kanpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- CONTACT / INQUIRY FORM (5 COLS) -->
+                <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-slate-200">
+                    <h3 class="text-xl font-extrabold text-navy-950 mb-1">Book Free Counseling</h3>
+                    <p class="text-xs text-slate-500 mb-6">Fill out the form below and our Kanpur academic counselor will get in touch with you within 2 hours.</p>
+
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Student's Full Name *</label>
+                            <input type="text" id="studentName" required placeholder="e.g. Rahul Verma" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 focus:border-transparent">
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Parent Phone *</label>
+                                <input type="tel" id="studentPhone" pattern="[0-9]{10}" required placeholder="10-digit Mobile" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-1">Current Class *</label>
+                                <select id="studentClass" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 focus:border-transparent bg-white">
+                                    <option value="">Select Class</option>
+                                    <option value="9th">Class 9th</option>
+                                    <option value="10th">Class 10th</option>
+                                    <option value="11th">Class 11th</option>
+                                    <option value="12th">Class 12th</option>
+                                    <option value="Dropper">Target 2025 Dropper</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Course Interested In *</label>
+                            <select id="courseInterest" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 focus:border-transparent bg-white">
+                                <option value="">Select Target Course</option>
+                                <option value="IIT-JEE">IIT-JEE (Main & Advanced)</option>
+                                <option value="NEET-UG">NEET-UG Medical</option>
+                                <option value="School-Science">Class 11-12 Science Board</option>
+                                <option value="School-Commerce">Class 11-12 Commerce Board</option>
+                                <option value="Class-9-10">Class 9-10 Board Booster</option>
+                                <option value="Foundation">Junior Foundation & Olympiad</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">Message / Specific Query (Optional)</label>
+                            <textarea id="studentMsg" rows="3" placeholder="Tell us about your target rank or specific doubts..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 focus:border-transparent"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full btn-saffron py-3.5 rounded-xl font-bold text-sm shadow-lg flex items-center justify-center gap-2 transition">
+                            <span>Submit Admission Inquiry</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-navy-950 text-slate-400 text-sm border-t border-navy-900 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- BRAND INFO (2 COLS) -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-navy-900 to-navy-800 flex items-center justify-center text-saffron-400 text-xl font-bold border border-saffron-500/30">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <span class="font-sans font-extrabold text-2xl text-white tracking-tight">
+                            SHRI HARI <span class="text-saffron-500">ACADEMY</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Shri Hari Academy is Kanpur's premier institute for IIT-JEE, NEET, and Class 9th to 12th board preparation. Built on principles of conceptual mastery, small batch sizes, and individualized mentorship.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-navy-900 text-slate-300 hover:text-saffron-400 hover:bg-navy-800 flex items-center justify-center transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-navy-900 text-slate-300 hover:text-saffron-400 hover:bg-navy-800 flex items-center justify-center transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="w-9 h-9 rounded-full bg-navy-900 text-slate-300 hover:text-saffron-400 hover:bg-navy-800 flex items-center justify-center transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/919839012345" target="_blank" aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-navy-900 text-emerald-400 hover:bg-navy-800 flex items-center justify-center transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-base">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-saffron-400 transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-saffron-400 transition">About Kanpur Campus</a></li>
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">Courses & Fees</a></li>
+                        <li><a href="#why-us" class="hover:text-saffron-400 transition">Why Choose Us</a></li>
+                        <li><a href="#toppers" class="hover:text-saffron-400 transition">Hall of Fame</a></li>
+                        <li><a href="#contact" class="hover:text-saffron-400 transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- COURSES LINKS -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-base">Our Programs</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">IIT-JEE Main & Advanced</a></li>
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">NEET-UG Medical Prep</a></li>
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">Class 11 & 12 Science</a></li>
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">Class 11 & 12 Commerce</a></li>
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">Class 9th & 10th Boards</a></li>
+                        <li><a href="#courses" class="hover:text-saffron-400 transition">Junior Foundation 8th-10th</a></li>
+                    </ul>
+                </div>
+
+                <!-- KANPUR ADDRESS -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-base">Kanpur Locations</h4>
+                    <div class="text-xs space-y-2 text-slate-400">
+                        <p><strong>Kakadeo Branch:</strong><br> Plot 42, Main Coaching Hub, Kakadeo, Kanpur - 208025</p>
+                        <p><strong>Swaroop Nagar Branch:</strong><br> 117/N/84, Opposite Rave Moti, Swaroop Nagar, Kanpur</p>
+                        <p class="pt-1 text-saffron-400 font-semibold"><i class="fa-solid fa-phone"></i> +91 98390 12345</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COPYRIGHT BAR -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <div>
+                    &copy; 2025 Shri Hari Academy, Kanpur. All Rights Reserved.
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Admission</a>
+                    <a href="#" class="hover:text-slate-400">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FREE DEMO CLASS MODAL POPUP -->
+    <div id="demoModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-all duration-300">
+        <div class="bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden relative border border-slate-100 transform transition-all scale-95 opacity-0" id="modalContainer">
+            
+            <!-- CLOSE BUTTON -->
+            <button onclick="closeDemoModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 text-slate-500 hover:text-slate-800 flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- MODAL HEADER -->
+            <div class="bg-navy-950 text-white p-6 sm:p-8">
+                <span class="bg-saffron-500 text-navy-950 text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">Free Trial Pass</span>
+                <h3 class="text-2xl font-extrabold mt-2 text-white">Book a Free Demo Class</h3>
+                <p class="text-xs text-slate-300 mt-1">Experience Kanpur's top classroom teaching with zero obligation.</p>
+            </div>
+
+            <!-- MODAL FORM -->
+            <form id="demoForm" class="p-6 sm:p-8 space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Student Name *</label>
+                    <input type="text" id="demoName" required placeholder="Enter student's full name" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Parent Phone *</label>
+                        <input type="tel" id="demoPhone" pattern="[0-9]{10}" required placeholder="10-digit number" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 mb-1">Target Exam / Class *</label>
+                        <select id="demoCourse" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white">
+                            <option value="IIT-JEE">IIT-JEE (Main & Adv)</option>
+                            <option value="NEET-UG">NEET Medical</option>
+                            <option value="Class 11-12 Science">Class 11-12 Science</option>
+                            <option value="Class 11-12 Commerce">Class 11-12 Commerce</option>
+                            <option value="Class 9-10 Boards">Class 9-10 Boards</option>
+                            <option value="Junior Foundation">Junior Foundation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Kanpur Campus *</label>
+                    <select id="demoBranch" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500 bg-white">
+                        <option value="Kakadeo Main Hub">Kakadeo Main Branch</option>
+                        <option value="Swaroop Nagar Center">Swaroop Nagar Center</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Preferred Demo Date</label>
+                    <input type="date" id="demoDate" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-saffron-500">
+                </div>
+
+                <button type="submit" class="w-full btn-saffron py-3.5 rounded-xl font-bold text-sm shadow-lg flex items-center justify-center gap-2 mt-2">
+                    <span>Confirm Free Demo Registration</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-navy-950 text-white px-6 py-4 rounded-2xl shadow-2xl border border-saffron-500/50 flex items-center gap-3 pointer-events-none">
+        <div class="w-8 h-8 rounded-full bg-saffron-500 text-navy-950 flex items-center justify-center font-bold text-sm shrink-0">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <h5 class="font-bold text-sm text-saffron-400" id="toastTitle">Inquiry Received!</h5>
+            <p class="text-xs text-slate-300" id="toastMsg">Thank you! Our Kanpur counselor will call you shortly.</p>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

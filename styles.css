@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Shri Hari Academy - Custom CSS Styles
+   Color Theme: Navy Blue (#0F172A, #1E3A8A), Warm Saffron Gold (#F59E0B, #D97706)
+   ========================================================================== */
+
+/* Custom Marquee Animation for Notice Ticker */
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+    display: inline-flex;
+    animation: marquee 22s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Custom Saffron Primary Button */
+.btn-saffron {
+    background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+    color: #0F172A;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(251, 191, 36, 0.4);
+}
+
+.btn-saffron:hover {
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+    box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-saffron:active {
+    transform: translateY(0);
+}
+
+/* Course Tab Filter Buttons */
+.tab-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    color: #475569;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.tab-btn:hover {
+    color: #0F172A;
+    border-color: #CBD5E1;
+    background-color: #F8FAFC;
+}
+
+.tab-btn.active {
+    background-color: #0F172A;
+    color: #F59E0B;
+    border-color: #0F172A;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+/* Mobile Nav Link */
+.mobile-nav-link {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #1E293B;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+    background-color: #F8FAFC;
+    color: #D97706;
+}
+
+/* Testimonial Slider Dots */
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #CBD5E1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    width: 28px;
+    border-radius: 999px;
+    background-color: #F59E0B;
+}
+
+/* FAQ Accordion Styling */
+.faq-header:hover {
+    background-color: #F1F5F9;
+}
+
+/* Slow bounce for floating badges */
+@keyframes bounceSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.animate-bounce-slow {
+    animation: bounceSlow 4s ease-in-out infinite;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F59E0B;
+}
